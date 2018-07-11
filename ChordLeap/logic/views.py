@@ -24,3 +24,4 @@ def chord_list(request):
     chords = Chord.objects.all()
     return render(request, 'index.html', {'chords': chords})
 
+

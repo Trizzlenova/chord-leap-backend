@@ -10,6 +10,7 @@ from rest_framework_simplejwt.views import (
 from rest_framework import views, serializers, status
 from rest_framework.routers import DefaultRouter
 from logic.serializers import EchoView
+from . import tests
 
 
 urlpatterns = [
@@ -22,4 +23,5 @@ urlpatterns = [
   url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
   url(r'^api/echo/$', EchoView.as_view()),
   url(r'api/chords/$', controllers.ChordList.as_view()),
+  url(r'api/users^$', views.UserCreate.as_view(), name='account-create'),
 ]
