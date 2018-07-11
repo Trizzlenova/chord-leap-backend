@@ -1,4 +1,4 @@
-#!/Users/TDSwayzee22/Desktop/wdi/chord-leap/backend/.env/bin/python
+#!/Users/TDSwayzee22/Desktop/wdi/chord-leap-backend/backend/.env/bin/python
 
 import sys
 import getopt

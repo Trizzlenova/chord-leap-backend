@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/TDSwayzee22/Desktop/wdi/chord-leap/backend/.env"
+set -gx VIRTUAL_ENV "/Users/TDSwayzee22/Desktop/wdi/chord-leap-backend/backend/.env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
