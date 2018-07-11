@@ -23,5 +23,4 @@ urlpatterns = [
   url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
   url(r'^api/echo/$', EchoView.as_view()),
   url(r'api/chords/$', controllers.ChordList.as_view()),
-  url(r'api/users^$', views.UserCreate.as_view(), name='account-create'),
 ]

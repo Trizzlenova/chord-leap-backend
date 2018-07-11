@@ -30,17 +30,16 @@ class UserSerializer(serializers.ModelSerializer):
     full_name = serializers.CharField(max_length=40)
     image = serializers.CharField(max_length=250)
 
-    def create(self, validator):
-        user = User.objects.create_user(
-            validator['username'],
-            validator['password'],
-        )
-        return user
-
     class Meta:
         model = User
         fields = ('id', 'username', 'password', 'full_name', 'image')
 
+    def create(self, validated_data):
+        user = User.objects.create(**validated_data)
+        user.validated_data['username']
+        user.validated_data['password']
+        user.save()
+        return user
 
 
 class ChordSerializer(serializers.ModelSerializer):
