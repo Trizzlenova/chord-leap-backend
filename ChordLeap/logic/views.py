@@ -3,6 +3,7 @@ from django.core import serializers
 from django.http import JsonResponse
 from django.forms import ModelForm
 from logic.models import User, Chord, Progression
+#
 
 # Create your views here.
 
@@ -24,4 +25,14 @@ def chord_list(request):
     chords = Chord.objects.all()
     return render(request, 'index.html', {'chords': chords})
 
-
+# def chords_list(request):
+#     chords = Chord.objects.all()
+#     populated = []
+#     for chord in chords:
+#       params = {
+#         'id' = chord.id,
+#         'name' = chord.name,
+#         'related_chord' = chord.related_chord
+#       }
+#       populated.append(params)
+#       return JsonResponse(populated, safe = False)
