@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ChordLeap.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ChordLeap.ChordLeap.settings")
 
 application = get_wsgi_application()
 
