@@ -1,1 +1,1 @@
-web: gunicorn chord-leap-backend.herokuapp.com/.wsgi --log-file -
+web: gunicorn ChordLeap.wsgi --log-file -
