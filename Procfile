@@ -1,1 +1,1 @@
-web: gunicorn ChordLeap.wsgi --log-file -
+web: gunicorn logic.wsgi --log-file -
