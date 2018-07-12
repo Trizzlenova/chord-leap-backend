@@ -2,3 +2,4 @@ __pycache__
 .env
 config.py
 .bash_profile
+*.pyc
