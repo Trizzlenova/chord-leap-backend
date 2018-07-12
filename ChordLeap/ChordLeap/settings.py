@@ -26,7 +26,7 @@ SECRET_KEY = 'bsssfx%($l14xo97)$)7fsb%ao52nj%+4a%f5e4r5q*ji&j$6l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'chord-leap-backend.herokuapp.com/']
 
 
 # Application definition
