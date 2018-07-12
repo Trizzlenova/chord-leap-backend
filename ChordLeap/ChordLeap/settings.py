@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ChordLeap.urls'
+ROOT_URLCONF = 'ChordLeap.ChordLeap.urls'
 
 TEMPLATES = [
     {
