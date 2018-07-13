@@ -22,7 +22,13 @@ class Chord(models.Model):
 
 class Progression(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='users')
-    chords = models.ManyToManyField(Chord, related_name='chords')
+    # Change to chord model object
+    array_of_chords = models.CharField(max_length=120, blank=True, null=True)
 
     def __str__(self):
         return self.user
+
+
+
+
+# Progression.objects.create(user: id, chords: array of strings)
