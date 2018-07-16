@@ -31,12 +31,25 @@ def seedChords():
   chords = [
   {
     'name': 'A min',
-    'related_chords': "['D maj', 'C maj', 'A min']",
+    'related_chords': "['B min', 'C maj', 'D maj']",
   },
   {
     'name': 'B min',
-    'related_chords': "['A maj', 'C maj', 'E min']",
+    'related_chords': "['C maj', 'D maj', 'E min']",
   },
+  {
+    'name': 'C maj',
+    'related_chords': "['A min', 'B min', 'E min']",
+  },
+  {
+    'name': 'D maj',
+    'related_chords': "['A min', 'D maj', 'E min']",
+  },
+  {
+    'name': 'E min',
+    'related_chords': "['A min', 'C maj', 'B min']",
+  },
+
   ]
 
   for chord in chords:
